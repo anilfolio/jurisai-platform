@@ -22,11 +22,17 @@ import { cookies } from 'next/headers';
 export async function getSession(): Promise<SessionPayload | null> {
   const cookieStore = await cookies();
   const authCookie = cookieStore.get('lexvalue-auth');
-  const email = authCookie?.value || "harvey@smithassociates.com";
+  if (!authCookie?.value) {
+    return null;
+  }
+  const email = authCookie.value;
 
   const { getMockUsers } = await import('./mock-data');
   const users = getMockUsers();
-  const user = users.find((u: any) => u.email === email) || users[0];
+  const user = users.find((u: any) => u.email === email);
+  if (!user) {
+    return null;
+  }
 
   return {
     id: user.id,
