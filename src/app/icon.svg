@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="32" height="32">
+  <g id="jurisai-icon">
+    
+  <!-- Base Pedestal (Tiered Circuit Ledge) -->
+  <g fill="none" stroke="#B79058" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top tier bar & slopes -->
+    <path d="M 406,708.5 L 617,708.5" stroke-width="19" stroke-linecap="square" />
+    <path d="M 406,708.5 L 354,741.5" stroke-width="19" stroke-linecap="square" />
+    <path d="M 617,708.5 L 669,741.5" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Middle tier bar with circuit jog gap on right -->
+    <path d="M 354,741.5 L 596,741.5" stroke-width="19" stroke-linecap="square" />
+    <path d="M 622,741.5 L 669,741.5" stroke-width="19" stroke-linecap="square" />
+    <path d="M 354,741.5 L 348,775" stroke-width="19" stroke-linecap="square" />
+    <path d="M 669,741.5 L 675,775" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Bottom tier rounded bar -->
+    <path d="M 352,775 L 671,775" stroke-width="19" stroke-linecap="round" />
+
+    <!-- Lower Stem Traces -->
+    <!-- Trace 1 (Left): Ring pad (443, 533) -> 45° jog to (468, 558) -> vertical to base -->
+    <path d="M 451,541 L 468,558 L 468,700" stroke-width="19" stroke-linecap="square" stroke-linejoin="round" />
+
+    <!-- Trace 2 (Center-Left): from (511.5, 575) down to (511.5, 608) -> 45° jog to (494, 626) -> vertical to base -->
+    <path d="M 511.5,575 L 511.5,608 L 494,626 L 494,700" stroke-width="19" stroke-linecap="square" stroke-linejoin="round" />
+
+    <!-- Trace 3 (Center-Right): from (532, 626) vertical to base -->
+    <path d="M 532,626 L 532,700" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Trace 4 (Right): Ring pad (562, 581) vertical to base -->
+    <path d="M 562,597 L 562,700" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Upper Central Stem (stops with intentional air-gap above floating diamond) -->
+    <line x1="511.5" y1="256" x2="511.5" y2="352" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Upper-Left Circuitry -->
+    <line x1="461" y1="298" x2="456" y2="368" stroke-width="19" stroke-linecap="square" />
+    <path d="M 445,287 L 405,287 L 375,317 L 358,317" stroke-width="19" stroke-linecap="square" stroke-linejoin="round" />
+    <line x1="375" y1="317" x2="405" y2="347" stroke-width="19" stroke-linecap="square" />
+    <line x1="324" y1="347" x2="405" y2="347" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Upper-Right Circuitry -->
+    <line x1="562" y1="298" x2="562" y2="414" stroke-width="19" stroke-linecap="square" />
+    <path d="M 578,287 L 618,287 L 648,317 L 665,317" stroke-width="19" stroke-linecap="square" stroke-linejoin="round" />
+    <line x1="648" y1="317" x2="618" y2="347" stroke-width="19" stroke-linecap="square" />
+    <line x1="618" y1="347" x2="699" y2="347" stroke-width="19" stroke-linecap="square" />
+
+    <!-- Scale Pans Cords -->
+    <path d="M 299,374 L 218,548 M 299,374 L 380,548" stroke-width="19" stroke-linecap="round" />
+    <path d="M 724,374 L 643,548 M 724,374 L 805,548" stroke-width="19" stroke-linecap="round" />
+
+    <!-- Left Scale Dish -->
+    <line x1="184" y1="578" x2="414" y2="578" stroke-width="19" stroke-linecap="square" />
+    <path d="M 184,578 L 299,642 L 414,578" stroke-width="19" stroke-linejoin="miter" stroke-miterlimit="4" stroke-linecap="square" />
+
+    <!-- Right Scale Dish -->
+    <line x1="609" y1="578" x2="839" y2="578" stroke-width="19" stroke-linecap="square" />
+    <path d="M 609,578 L 724,642 L 839,578" stroke-width="19" stroke-linejoin="miter" stroke-miterlimit="4" stroke-linecap="square" />
+  </g>
+
+  <!-- Circuit Ring Terminals / Pads (Hollow) -->
+  <g fill="none" stroke="#B79058">
+    <!-- Top terminal -->
+    <circle cx="511.5" cy="229" r="20" stroke-width="14" />
+    <!-- Left pan hook -->
+    <circle cx="299" cy="348" r="20" stroke-width="14" />
+    <!-- Right pan hook -->
+    <circle cx="724" cy="348" r="20" stroke-width="14" />
+
+    <!-- Upper branch pads -->
+    <circle cx="461" cy="287" r="15" stroke-width="10" />
+    <circle cx="456" cy="382" r="15" stroke-width="10" />
+    <circle cx="346" cy="317" r="15" stroke-width="10" />
+    <circle cx="562" cy="287" r="15" stroke-width="10" />
+    <circle cx="677" cy="317" r="15" stroke-width="10" />
+
+    <!-- Lower stem pads -->
+    <circle cx="443" cy="533" r="15" stroke-width="10" />
+    <circle cx="562" cy="581" r="15" stroke-width="10" />
+  </g>
+
+  <!-- Central Floating AI Neural Graph (Solid Discs & Links) -->
+  <g>
+    <!-- Outer Diamond Edges -->
+    <path d="M 511.5,386 L 590,463.5 L 511.5,541 L 433,463.5 Z" fill="none" stroke="#B79058" stroke-width="20" stroke-linejoin="miter" stroke-miterlimit="4" />
+    <!-- Cross Links -->
+    <line x1="433" y1="463.5" x2="590" y2="463.5" stroke="#B79058" stroke-width="20" />
+    <line x1="511.5" y1="386" x2="511.5" y2="541" stroke="#B79058" stroke-width="20" />
+
+    <!-- 5 Solid AI Nodes -->
+    <circle cx="511.5" cy="463.5" r="23" fill="#B79058" />
+    <circle cx="511.5" cy="386" r="22" fill="#B79058" />
+    <circle cx="511.5" cy="541" r="22" fill="#B79058" />
+    <circle cx="433" cy="463.5" r="22" fill="#B79058" />
+    <circle cx="590" cy="463.5" r="22" fill="#B79058" />
+  </g>
+  
+  </g>
+</svg>
